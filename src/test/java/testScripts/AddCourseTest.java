@@ -18,7 +18,7 @@ public class AddCourseTest extends BaseClass {
 		courselist.clickNewButton();
 		soft.assertEquals(addCourse.getPageHeader(),"Add New Course");
 		
-		Map<String,String> map = excel.readFromExcel("Add Course");
+		Map<String,String> map = excel.readFromExcel("Add  Course");
 		addCourse.setName(map.get("Name"));
 		addCourse.selectCategory(web, map.get("Category"));
 		addCourse.setPrice(map.get("Price"));
